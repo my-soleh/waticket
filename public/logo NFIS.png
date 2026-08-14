@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFC107"/>
+      <stop offset="100%" stop-color="#F57C00"/>
+    </radialGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A859"/>
+      <stop offset="100%" stop-color="#006837"/>
+    </linearGradient>
+    <linearGradient id="petalGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#29B6F6"/>
+      <stop offset="100%" stop-color="#0288D1"/>
+    </linearGradient>
+    <linearGradient id="petalGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#0097A7"/>
+    </linearGradient>
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E88E5"/>
+      <stop offset="100%" stop-color="#1565C0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base Leaf Geometric Structure -->
+  <g id="outer-star-leaves">
+    <path d="M 250 20 L 290 100 L 370 60 L 350 150 L 440 160 L 390 230 L 480 270 L 410 320 L 460 390 L 370 390 L 380 470 L 300 420 L 250 490 L 200 420 L 120 470 L 130 390 L 40 390 L 90 320 L 20 270 L 110 230 L 60 160 L 150 150 L 130 60 L 210 100 Z" fill="url(#leafGrad)"/>
+  </g>
+
+  <!-- Cyan Geometric Petals Ring -->
+  <g id="mandala-petals" opacity="0.95">
+    <!-- Top Petals -->
+    <circle cx="250" cy="180" r="95" fill="none" stroke="#00E5FF" stroke-width="8" opacity="0.8"/>
+    <circle cx="200" cy="220" r="95" fill="none" stroke="#29B6F6" stroke-width="8" opacity="0.8"/>
+    <circle cx="300" cy="220" r="95" fill="none" stroke="#29B6F6" stroke-width="8" opacity="0.8"/>
+    <circle cx="250" cy="260" r="95" fill="none" stroke="#0288D1" stroke-width="8" opacity="0.8"/>
+
+    <!-- Petal Overlays -->
+    <path d="M 250 85 C 290 130 310 180 250 240 C 190 180 210 130 250 85 Z" fill="url(#petalGrad2)" opacity="0.85"/>
+    <path d="M 175 160 C 230 170 260 210 220 270 C 160 250 150 190 175 160 Z" fill="url(#petalGrad1)" opacity="0.85"/>
+    <path d="M 325 160 C 270 170 240 210 280 270 C 340 250 350 190 325 160 Z" fill="url(#petalGrad1)" opacity="0.85"/>
+  </g>
+
+  <!-- Central Islamic 8-Pointed Star (Rub el Hizb) -->
+  <g id="center-star" transform="translate(250,225) rotate(22.5)">
+    <rect x="-42" y="-42" width="84" height="84" fill="url(#centerGlow)" rx="4"/>
+    <rect x="-42" y="-42" width="84" height="84" fill="url(#centerGlow)" rx="4" transform="rotate(45)"/>
+  </g>
+
+  <!-- Open Book (Al-Qur'an / Knowledge Emblem) at Bottom -->
+  <g id="open-book">
+    <path d="M 60 310 C 150 280 220 330 248 370 C 252 370 250 370 252 370 C 280 330 350 280 440 310 L 480 345 C 380 310 300 375 250 425 C 200 375 120 310 20 345 Z" fill="url(#bookGrad)"/>
+    <!-- Book Page Lines Accent -->
+    <path d="M 75 320 C 155 295 220 340 245 375" fill="none" stroke="#FFFFFF" stroke-width="4" opacity="0.7"/>
+    <path d="M 425 320 C 345 295 280 340 255 375" fill="none" stroke="#FFFFFF" stroke-width="4" opacity="0.7"/>
+  </g>
+</svg>

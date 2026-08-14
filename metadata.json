@@ -1,0 +1,6 @@
+{
+  "name": "WATICKET",
+  "description": "Sistem Ticketing & Layanan Pengaduan via WhatsApp dengan Integrasi Fonnte API & Google Spreadsheet Sync",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
